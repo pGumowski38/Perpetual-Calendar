@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DniRobocze">
+
+    <TextView
+        android:id="@+id/textPierwszaData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/data_poczatkowa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textDrugaData"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/textKalendarzowe"
+        app:layout_constraintEnd_toStartOf="@+id/datePicker2"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPierwszaData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textDrugaData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/data_koncowa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <DatePicker
+        android:id="@+id/datePicker2"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="5dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDROk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDrugaData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textKalendarzowe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dni_kalendarzowe_0"
+        app:layout_constraintBottom_toTopOf="@+id/textRobocze"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDROk"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPierwszaData"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <TextView
+        android:id="@+id/textRobocze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dni_robocze_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDROk"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPierwszaData"
+        app:layout_constraintVertical_bias="0.876" />
+
+    <Button
+        android:id="@+id/buttonDROk"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.799"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDrugaData"
+        app:layout_constraintVertical_bias="0.916" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

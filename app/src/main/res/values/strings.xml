@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Perpetual Calendar</string>
+    <string name="boze_cialo">Boże Ciało:</string>
+    <string name="wielkanoc">Wielkanoc:</string>
+    <string name="adwent">Adwent:</string>
+    <string name="popielec">Popielec:</string>
+    <string name="niedziele">Niedziele</string>
+    <string name="dni_robocze">Dni Robocze</string>
+    <string name="niedziele_handlowe_dla_roku">Niedziele handlowe dla roku</string>
+    <string name="ok">OK</string>
+    <string name="data_poczatkowa">Data Początkowa</string>
+    <string name="data_koncowa">Data Końcowa</string>
+    <string name="dni_kalendarzowe_0">Dni Kalendarzowe: 0</string>
+    <string name="dni_robocze_0">Dni Robocze: 0</string>
+</resources>
